@@ -3,7 +3,37 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Html } from '@react-three/drei';
 
 const answers = [
-  'Yes', 'No', 'Ask again', 'Definitely', 'Unlikely', 'Maybe', 'Absolutely', 'Try later', 'Cannot say', 'Outlook good',
+  'Yes',
+  'No',
+  'Ask again',
+  'Definitely',
+  'Unlikely',
+  'Maybe',
+  'Absolutely',
+  'Try later',
+  'Cannot say',
+  'Outlook good',
+  'Better not tell you now... or ever.',
+  'You already know the answer.',
+  'The stars say meh.',
+  'My sources say refresh.',
+  'If you believe in magic...',
+  'You can\'t handle the truth!',
+  'Ask again when Mercury is in retrograde.',
+  'Only if you say please.',
+  'I wouldn\'t bet on it.',
+  'You wish!',
+  'Absolutely.. not sure.',
+  'The answer is somewhere on the internet.',
+  'Ask your future self.',
+  'If I told you, I\'d have to [REDACTED].',
+  'Only on a leap year.',
+  'I see a yes, but also a no.',
+  'Consult the nearest dog.',
+  'If you have to ask, you know the answer.',
+  'I plead the fifth.',
+  'Ask again after a deep breath.',
+  'You can\'t rush magic.',
 ];
 
 function EightBall(props) {
