@@ -3,7 +3,7 @@ import { Center, useTexture } from '@react-three/drei';
 import gsap from 'gsap';
 import { useCallback, useRef } from 'react';
 
-const Rings = ({ position }) => {
+const Rings = ({ position, ...props }) => {
   const refList = useRef([]);
   const getRef = useCallback((mesh) => {
     if (mesh && !refList.current.includes(mesh)) {
@@ -45,7 +45,7 @@ const Rings = ({ position }) => {
 
   return (
     <Center>
-      <group scale={0.5}>
+      <group scale={0.5} {...props} onClick={props.onAssetClick}>
         {Array.from({ length: 4 }, (_, index) => (
           <mesh key={index} ref={getRef}>
             <torusGeometry args={[(index + 1) * 0.5, 0.1]}></torusGeometry>

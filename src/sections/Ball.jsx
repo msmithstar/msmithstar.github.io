@@ -34,6 +34,7 @@ const answers = [
   'I plead the fifth.',
   'Ask again after a deep breath.',
   'You can\'t rush magic.',
+  'You will mentor an intern soon..',
 ];
 
 function EightBall(props) {
@@ -106,9 +107,13 @@ function EightBall(props) {
         shakeRef.current = 0;
         mesh.current.rotation.x = 0;
         mesh.current.rotation.y = 0;
+        const picked = answers[Math.floor(Math.random() * answers.length)];
+        console.log('Total answers:', answers.length);
+        console.log('Picked answer:', picked);
         setState(s => ({
           ...s,
-          answer: answers[Math.floor(Math.random() * answers.length)],
+          answer: picked,
+          display: picked,
           phase: 'returning',
         }));
       }
@@ -125,6 +130,7 @@ function EightBall(props) {
 
   // Triggers (click, mouse shake, etc.)
   const handleShake = () => {
+    console.log('SHAKE TRIGGERED!'); // Test if clicking works
     clearTimeout(timerRef.current);
     setState(s => ({ ...s, phase: 'shaking', display: '8', color: '#00ffe7', answer: '8', opacity: 1 }));
   };

@@ -128,9 +128,9 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
     deskScale: isSmall ? 3.0 : isMobile ? 3.6 : 3.9, // 1.5x increased from previous values
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
     cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-    starPosition: isSmall ? [-5, -7, -10] : isMobile ? [-9, -7, -10] : isTablet ? [-11, -4, -10] : [-13, -10, -10],
+    acLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [10, 3, 0],
+    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-8, 10, 0] : isTablet ? [-10, 10, 0] : [-18, 10, 0],
+    starPosition: isSmall ? [-5, -7, -10] : isMobile ? [-7, -7, -10] : isTablet ? [-9, -4, -10] : [-11, -10, -10],
   };
 };
 

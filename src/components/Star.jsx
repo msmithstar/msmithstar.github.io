@@ -17,7 +17,7 @@ const Star = (props) => {
   });
 
   return (
-    <mesh {...props} ref={starRef} rotation={[0, Math.PI / 5, 0]} scale={1.5}>
+    <mesh {...props} ref={starRef} rotation={[0, Math.PI / 5, 0]} scale={1.5} onClick={props.onAssetClick}>
       <primitive object={scene} />
     </mesh>
   );
