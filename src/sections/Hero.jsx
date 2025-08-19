@@ -168,17 +168,13 @@ const Hero = () => {
               <>
                 <h2 className="grid-headtext mb-4 text-cyan-400">🌟 Alpha Centauri</h2>
                 <p className="grid-subtext mb-4">
-                  Alpha Centauri represents my journey into collaborative innovation and pushing boundaries. 
-                  As part of this transformative program, I've learned to approach challenges with both 
-                  technical precision and creative thinking.
+                  Forming a consulting company with no consulting or programming experience was an interesting ride. We formed Alpha Centauri at the end of Team Week- the first week of the i.c.stars internship. Team week was focused on getting to know each other. We spent 11 hours a day with people we hardly knew. The only thing we did know was that we would be on teams with these people.
                 </p>
                 <p className="grid-subtext mb-4">
-                  The experience has taught me the value of diverse perspectives in problem-solving and 
-                  the importance of building technology that creates meaningful impact for communities.
+                  The team-making process was not what I expected. By the end of the 4th day, I had a list of interns in mind that I thought would be great to work with. I considered their personalities, communication style, and prior experience to decide who I wanted the most. On the 5th day, i.c.stars had a different plan for us. They decided the teams, which resulted in me teaming up with just the right fit for us to grow and succeed. They formed the teams based on our MBTI scores, our applications, and how we interacted across the span of the first week.
                 </p>
                 <p className="grid-subtext">
-                  This symbol represents my commitment to excellence, continuous growth, and the belief 
-                  that the best solutions emerge when brilliant minds collaborate toward a common goal.
+                 The first part of the process was hard. I didn’t know these people and I wasn’t particularly thrilled to be with one of them based on our interactions during Team Week. I didn’t really have too many opinions on the other members yet, but I was initially disappointed I wasn’t able to form the team I thought would be a good fit.
                 </p>
               </>
             )}
