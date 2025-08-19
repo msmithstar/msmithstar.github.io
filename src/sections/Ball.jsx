@@ -79,7 +79,9 @@ function EightBall(props) {
       setState(s => ({ ...s, opacity: 0 }));
       timerRef.current = setTimeout(() => setState(s => ({ ...s, display: '8', color: '#000', phase: 'fadeIn8' })), 400);
     } else if (state.phase === 'fadeIn8') {
-      timerRef.current = setTimeout(() => setState(s => ({ ...s, opacity: 1, color: '#00ffe7', answer: '8', phase: 'default' })), 10);
+      timerRef.current = setTimeout(() => setState(s => ({ ...s, opacity: 1, color: '#00ffe7', answer: '8', phase: 'resetPosition' })), 10);
+    } else if (state.phase === 'resetPosition') {
+      timerRef.current = setTimeout(() => setState(s => ({ ...s, phase: 'default' })), 100);
     }
     // No timer for 'default', 'shaking', 'returning'
     return () => clearTimeout(timerRef.current);
@@ -124,6 +126,27 @@ function EightBall(props) {
         mesh.current.rotation.x = 0;
         mesh.current.rotation.y = 0;
         setState(s => ({ ...s, phase: 'fadingOut' }));
+      }
+    } else if (state.phase === 'resetPosition') {
+      // Ensure ball returns to default position and rotation
+      mesh.current.rotation.x += (-mesh.current.rotation.x) * 0.3;
+      mesh.current.rotation.y += (-mesh.current.rotation.y) * 0.3;
+      mesh.current.rotation.z += (-mesh.current.rotation.z) * 0.3;
+      mesh.current.position.x += (-mesh.current.position.x) * 0.3;
+      mesh.current.position.y += (-mesh.current.position.y) * 0.3;
+      mesh.current.position.z += (-mesh.current.position.z) * 0.3;
+      
+      // Check if we're close enough to default state
+      if (Math.abs(mesh.current.rotation.x) < 0.001 && 
+          Math.abs(mesh.current.rotation.y) < 0.001 &&
+          Math.abs(mesh.current.rotation.z) < 0.001 &&
+          Math.abs(mesh.current.position.x) < 0.001 &&
+          Math.abs(mesh.current.position.y) < 0.001 &&
+          Math.abs(mesh.current.position.z) < 0.001) {
+        // Force exact reset
+        mesh.current.rotation.set(0, 0, 0);
+        mesh.current.position.set(0, 0, 0);
+        setState(s => ({ ...s, phase: 'default' }));
       }
     }
   });

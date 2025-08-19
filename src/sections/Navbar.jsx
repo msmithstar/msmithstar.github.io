@@ -24,7 +24,7 @@ const NavItems = ({ onClick = () => {} }) => {
       {ballLink && (
         <li key={ballLink.id} className="nav-li">
           <a href={ballLink.href} className="nav-li_a" onClick={onClick}>
-            <img src={mball} alt="Magic 8 Ball" style={{ height: 28, width: 'auto', background: 'transparent', display: 'inline-block', verticalAlign: 'middle' }} />
+            <img src={mball} alt="Magic 8 Ball" style={{ height: 36, width: 'auto', background: 'transparent', display: 'inline-block', verticalAlign: 'middle' }} />
           </a>
         </li>
       )}

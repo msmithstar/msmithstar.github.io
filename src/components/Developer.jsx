@@ -21,11 +21,23 @@ const Developer = ({ animationName = 'idle', ...props }) => {
   const { animations: saluteAnimation } = useFBX('/models/animations/salute.fbx');
   const { animations: clappingAnimation } = useFBX('/models/animations/clapping.fbx');
   const { animations: victoryAnimation } = useFBX('/models/animations/victory.fbx');
+  const { animations: hhdanceAnimation } = useFBX('/models/animations/hhdance.fbx');
+  const { animations: stephhdanceAnimation } = useFBX('/models/animations/stephhdance.fbx');
+  const { animations: wavehhdanceAnimation } = useFBX('/models/animations/wavehhdance.fbx');
+  const { animations: wavingAnimation } = useFBX('/models/animations/waving.fbx');
+  const { animations: yesAnimation } = useFBX('/models/animations/yes.fbx');
+  const { animations: twerkAnimation } = useFBX('/models/animations/twerk.fbx');
 
   idleAnimation[0].name = 'idle';
   saluteAnimation[0].name = 'salute';
   clappingAnimation[0].name = 'clapping';
   victoryAnimation[0].name = 'victory';
+  hhdanceAnimation[0].name = 'hhdance';
+  stephhdanceAnimation[0].name = 'stephhdance';
+  wavehhdanceAnimation[0].name = 'wavehhdance';
+  wavingAnimation[0].name = 'waving';
+  yesAnimation[0].name = 'yes';
+  twerkAnimation[0].name = 'twerk';
 
   const { actions } = useAnimations(
     [idleAnimation[0], saluteAnimation[0], clappingAnimation[0], victoryAnimation[0]],

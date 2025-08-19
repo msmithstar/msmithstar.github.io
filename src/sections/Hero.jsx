@@ -35,7 +35,7 @@ const Hero = () => {
         </p>
         <p className="hero_tag text-gray_gradient">Bridging UX, Code, & AI</p>
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-          (and making it fun)
+          (have fun!)
         </p>
       </div>
 
@@ -97,9 +97,9 @@ const Hero = () => {
             >
               &times;
             </button>
-            <h2 className="grid-headtext mb-4">My Professional Journey</h2>
+            <h2 className="grid-headtext mb-4">🩷 A little about me</h2>
             {/* Add your journey content here */}
-            <p className="grid-subtext">Timeline, jobs, skills, etc.</p>
+            <p className="grid-subtext">I'm a passionate developer with a love for creating intuitive user experiences. I earned my Bachelor's in Game Art from Columbia College Chicago, where I learned 2D illustration, 3D modeling, and animation. I got into software development through i.c.stars internship and am lucky to have been able to marry the two to create fun, interactive experiences for everyone.</p>
           </div>
         </div>
       )}
@@ -130,37 +130,51 @@ const Hero = () => {
             
             {activeAssetModal === 'star' && (
               <>
-                <h2 className="grid-headtext mb-4 text-yellow-400">⭐ Dreams & Aspirations</h2>
+                <h2 className="grid-headtext mb-4 text-yellow-400">⭐ Leadership</h2>
                 <p className="grid-subtext mb-4">
-                  Every star represents a dream waiting to be realized. My journey in tech started with a simple wish - 
-                  to bridge the gap between beautiful design and powerful functionality.
+                  Before i.c.stars, I did not want to be a leader. I didn't think I was qualified or ambitious enough to lead others. I.c.stars taught me there are many ways to lead.
                 </p>
                 <p className="grid-subtext mb-4">
-                  From late nights learning to code to designing user experiences that matter, each challenge has been 
-                  a stepping stone toward creating technology that truly serves people.
+                  I learned I lead through mentorship. Week 3 I was already introducing the cycle to Figma. On Alpha Centauri, I introduced new project management software like Microsoft Loop which kept our team organized and on track. During Geek Week, I sped through my tasks and reached back to make sure I uplifted my peers so they could succeed too.
                 </p>
                 <p className="grid-subtext">
-                  The stars remind me to keep reaching higher, to never stop learning, and to always maintain that 
-                  sense of wonder that first drew me to this field.
+                  I didn't expect to enjoy leading others. I still have some imposter syndrome (who doesn't?), but I'm proud of my growth in just 14 weeks. I've learned to embrace my role and support my team in ways I never would've guessed.
                 </p>
               </>
             )}
             
             {activeAssetModal === 'cube' && (
               <>
-                <h2 className="grid-headtext mb-4 text-blue-400">🎯 Building Blocks</h2>
+                <h2 className="grid-headtext mb-4 text-blue-400">🎮 Game Development</h2>
                 <p className="grid-subtext mb-4">
-                  Like a Rubik's cube, every project I work on has multiple facets that need to align perfectly. 
-                  Each twist and turn teaches me something new about problem-solving and patience.
+                  Before diving into web development, I focused on design and got my BA in game art. I worked on TerraSphere, an indie game project where I contributed to both art and development. I made{' '}
+                  <a 
+                    href="https://skfb.ly/pAoI8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-orange-400 hover:text-orange-300 underline transition-colors font-medium"
+                  >
+                    Mars
+                  </a>
+                  , a cute astronaut that crash-landed on a planet and had to bring the planet back to life through planting new alien plants.
                 </p>
                 <p className="grid-subtext mb-4">
-                  My approach to development is methodical yet creative - breaking down complex problems into 
-                  manageable pieces, then assembling them into something beautiful and functional.
+                  This was the first piece of work I ever showcased at an event. We exhibited at the Chicago Toy and Game fair, where our cute space farming sim garnered the interest of both kids and adults combined. 
                 </p>
                 <p className="grid-subtext">
-                  The cube represents my love for puzzles, logic, and the satisfaction that comes from finding 
-                  elegant solutions to challenging problems.
+                 One note I remember, to this day, was a man who came up to our booth and loved the game. He asked for our business cards, but we had no cards! Since then, I've understood the importance of having a business card (thank you, QR codes..).
                 </p>
+                
+                <div className="mt-4">
+                  <a 
+                    href="https://thequestcrafter.itch.io/terrasphere/devlog/109959/meet-the-devs" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                  >
+                    Check out Terrasphere →
+                  </a>
+                </div>
               </>
             )}
             
@@ -168,32 +182,31 @@ const Hero = () => {
               <>
                 <h2 className="grid-headtext mb-4 text-cyan-400">🌟 Alpha Centauri</h2>
                 <p className="grid-subtext mb-4">
-                  Forming a consulting company with no consulting or programming experience was an interesting ride. We formed Alpha Centauri at the end of Team Week- the first week of the i.c.stars internship. Team week was focused on getting to know each other. We spent 11 hours a day with people we hardly knew. The only thing we did know was that we would be on teams with these people.
+                  Forming a consulting company with no consulting or programming experience was an interesting ride. We formed Alpha Centauri at the end of Team Week- the first week of the i.c.stars internship. Team week was focused on getting to know each other. We spent 11 hours a day with people we hardly knew. The only thing we did know was that we would be on teams with these people. Luckily, my team was Alpha Centauri.
                 </p>
                 <p className="grid-subtext mb-4">
-                  The team-making process was not what I expected. By the end of the 4th day, I had a list of interns in mind that I thought would be great to work with. I considered their personalities, communication style, and prior experience to decide who I wanted the most. On the 5th day, i.c.stars had a different plan for us. They decided the teams, which resulted in me teaming up with just the right fit for us to grow and succeed. They formed the teams based on our MBTI scores, our applications, and how we interacted across the span of the first week.
+                  Our initial process was choppy. New to tech, new to consulting, and new to each other, we had a lot to learn. We embraced the challenge, though, and through pushing and learning from each other, we found our rhythm.
                 </p>
                 <p className="grid-subtext">
-                 The first part of the process was hard. I didn’t know these people and I wasn’t particularly thrilled to be with one of them based on our interactions during Team Week. I didn’t really have too many opinions on the other members yet, but I was initially disappointed I wasn’t able to form the team I thought would be a good fit.
+                 From the start, my interest was in UX/UI. Over time, however, I found myself having fun learning various technologies, languages, and frameworks. Through shared leadership and a lot of curiosity, we were able to secure both wins for the Medline solutions projects.
                 </p>
               </>
             )}
             
             {activeAssetModal === 'rings' && (
               <>
-                <h2 className="grid-headtext mb-4 text-purple-400">🔄 Continuous Learning</h2>
+                <h2 className="grid-headtext mb-4 text-purple-400">🔄 Under Construction!</h2>
                 <p className="grid-subtext mb-4">
-                  These interconnected rings represent the cyclical nature of learning and growth. In tech, 
-                  standing still means falling behind, so I've embraced a mindset of continuous improvement.
+                  Coming soon...
                 </p>
-                <p className="grid-subtext mb-4">
+                {/* <p className="grid-subtext mb-4">
                   Each ring is a different skill set - UX design, frontend development, AI integration, and more. 
                   They're all connected, spinning together to create something greater than the sum of their parts.
                 </p>
                 <p className="grid-subtext">
                   The rings remind me that learning is not a destination but a journey, and that the most exciting 
                   discoveries happen at the intersections of different disciplines.
-                </p>
+                </p> */}
               </>
             )}
           </div>

@@ -142,7 +142,7 @@ export const workExperiences = [
     duration: 'May 2025 - Present',
     title: "Built fullstack web apps using React, Node.js, and Express. Led front-end development, integrated APIs, and presented a winning user-focused solution to stakeholders.",
     icon: '/assets/icstars.png',
-    animation: 'victory',
+    animation: 'clapping',
   },
   {
     id: 2,
@@ -151,7 +151,7 @@ export const workExperiences = [
     duration: 'Oct 2024 - Mar 2025',
     title: "Supported digital initiatives and created branded materials using official guides. Managed cross-team communication and led special projects with a UX lens.",
     icon: '/assets/sidley.jpg',
-    animation: 'clapping',
+    animation: 'salute',
   },
   {
     id: 3,
@@ -160,7 +160,7 @@ export const workExperiences = [
     duration: 'May 2024 - Sep 2024',
     title: "Managed candidate data for the recruiting team. Created onboarding guides and improved internal workflows with a user-first approach.",
     icon: '/assets/kirkland.jpg',
-    animation: 'salute',
+    animation: 'victory',
   },
   {
     id: 4,
@@ -169,7 +169,7 @@ export const workExperiences = [
     duration: 'Mar 2024 - May 2024',
     title: "Helped digitize legal records and streamline filing systems. Ensured secure handling of confidential data and supported compliance efforts.",
     icon: '/assets/kirkland.jpg',
-    animation: 'salute',
+    animation: 'clapping',
   },
   {
     id: 5,
@@ -178,6 +178,6 @@ export const workExperiences = [
     duration: 'Aug 2021 - Mar 2024',
     title: "Supported TRIO’s student success initiatives by designing digital materials, leading workshops, and managing data. Used tools like Trello, Miro, and Adobe Suite to create user-centered experiences and streamline team workflows.",
     icon: '/assets/ccc.png',
-    animation: 'salute',
+    animation: 'victory',
   },
 ];
