@@ -28,7 +28,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: 'Maddy Smith',
           from_email: form.email,
-          to_email: 'your-email@gmail.com', // Replace with your actual email
+          to_email: 'maddy.s6297@gmail.com', // Replace with your actual email
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="contact-container">
           <h3 className="head-text mt-12">Let's talk</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you're conjuring up a fresh site, leveling up your platform, or crafting something totally unique, I'm here to help bring your vision to life
+            Whether you're conjuring up a fresh site, leveling up your platform, or crafting something totally unique, I'm here to help bring your vision to life.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
