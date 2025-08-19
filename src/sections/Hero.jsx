@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useMediaQuery } from 'react-responsive';
 import { PerspectiveCamera } from '@react-three/drei';
+import { Leva } from 'leva';
 
 import Cube from '../components/Cube.jsx';
 import Rings from '../components/Rings.jsx';
@@ -39,6 +40,7 @@ const Hero = () => {
       </div>
 
       <div className="w-full h-full absolute inset-0 overflow-hidden">
+        <Leva hidden />
         <Canvas className="w-full h-full" camera={{ fov: 45 }}>
           <Suspense fallback={<CanvasLoader />}>
             {/* To hide controller */}
